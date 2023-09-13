@@ -3,6 +3,7 @@ import {useLoaderData, useNavigate} from "react-router-dom";
 import CookieService from "../services/cookie-service";
 import {UserData} from "../interfaces/user-data";
 import PlayerInfo from "./player-info";
+import ClickerButton from "./clicker-button";
 
 
 const Dashboard = () => {
@@ -26,7 +27,11 @@ const Dashboard = () => {
                 <button className=" p-2 text-white bg-red-600 rounded-xl" onClick={handleLogOut}>Se déconnecter</button>
             </section>
             <button onClick={showtest}>test</button>
-            <PlayerInfo/>
+            <div className="flex">
+                <PlayerInfo/>
+                <ClickerButton/>
+
+            </div>
         </div>
     );
 };
