@@ -16,16 +16,16 @@ const Register = () => {
     return (
         <div>
             <h2>Inscription</h2>
-                <form className="d-flex gap-3" onSubmit={submitForm}>
-                <div className="d-flex flex-column justify-content-start align-content-start">
+                <form className="flex gap-3 w-1/4" onSubmit={submitForm}>
+                <div className="flex flex-col">
                     <label htmlFor="username">Nom d'utilisateur</label>
-                    <input type="text" name="username"/>
+                    <input type="text" name="username" className="border"/>
                 </div>
-                <div className="d-flex flex-column">
+                <div className="flex flex-col">
                     <label htmlFor="password">Mot de passe</label>
-                    <input type="passsword" name="password"/>
+                    <input type="passsword" name="password" className="border"/>
                 </div>
-                <input type="submit" className="btn btn-warning w-25"/>
+                <input type="submit" className="bg-blue-500 px-4 rounded-xl text-white w-25"/>
             </form>
         </div>
     );

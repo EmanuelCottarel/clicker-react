@@ -20,11 +20,10 @@ const Dashboard = () => {
     }
 
     return (
-        <div>
+        <div className="px-2">
             <section className="flex justify-between">
                 <h1 className="text-3xl">Pokéclicker - Dashboard</h1>
-                <button className="btn btn-red" onClick={handleLogOut}>Se déconnecter</button>
-
+                <button className=" p-2 text-white bg-red-600 rounded-xl" onClick={handleLogOut}>Se déconnecter</button>
             </section>
             <button onClick={showtest}>test</button>
             <PlayerInfo/>

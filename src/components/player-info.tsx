@@ -6,7 +6,7 @@ const PlayerInfo = () => {
 
     const userData = useRouteLoaderData("dashboard") as UserData;
     return (
-        <section className="border border-gray-300 w-1/4 bg-red-600">
+        <section className="border border-gray-300 p-4 w-1/4 h-screen">
              <ul>
                 <li>{userData.username}</li>
                 <li>{userData.money}</li>
