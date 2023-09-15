@@ -2,12 +2,12 @@ import React from 'react';
 import {UserWorker} from "../interfaces/user-worker";
 import {WorkerListElementProps} from "../interfaces/props/worker-list-element-props";
 
-const WorkerListElement :React.FC<WorkerListElementProps> = (workers) => {
+const WorkerListElement: React.FC<WorkerListElementProps> = (workersData) => {
     return (
         <div>
-   {workers.map((worker: UserWorker) => (
-                    <li>{worker.name}</li>
-                ))}
+            {workersData.workers.map((worker: UserWorker) => (
+                <li>{worker.name}</li>
+            ))}
         </div>
     );
 };
